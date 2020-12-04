@@ -92,24 +92,26 @@ public class Main extends JFrame {
         Box hboxVariables = Box.createHorizontalBox();
         hboxVariables.setBorder(
                 BorderFactory.createLineBorder(Color.LIGHT_GRAY));
-        hboxVariables.add(Box.createHorizontalGlue());
         hboxVariables.add(labelForX);
         hboxVariables.add(Box.createHorizontalStrut(5));
         hboxVariables.add(textFieldX);
+        hboxVariables.add(Box.createHorizontalGlue());
         hboxVariables.add(Box.createHorizontalStrut(10));
+        hboxVariables.add(Box.createHorizontalGlue());
         hboxVariables.add(labelForY);
         hboxVariables.add(Box.createHorizontalStrut(5));
         hboxVariables.add(textFieldY);
+        hboxVariables.add(Box.createHorizontalGlue());
         hboxVariables.add(Box.createHorizontalStrut(10));
+        hboxVariables.add(Box.createHorizontalGlue());
         hboxVariables.add(labelForZ);
         hboxVariables.add(Box.createHorizontalStrut(5));
         hboxVariables.add(textFieldZ);
         hboxVariables.add(Box.createHorizontalStrut(10));
-        hboxVariables.add(Box.createHorizontalGlue());
 // Создать область для вывода результата
         JLabel labelForResult = new JLabel("Результат:");
 //labelResult = new JLabel("0");
-        textFieldResult = new JTextField("0", 10);
+        textFieldResult = new JTextField("0", 50);
         textFieldResult.setMaximumSize(
                 textFieldResult.getPreferredSize());
         Box hboxResult = Box.createHorizontalBox();
@@ -189,8 +191,8 @@ public class Main extends JFrame {
         contentBox.add(Box.createVerticalGlue());
         contentBox.add(hboxFormulaType);
         contentBox.add(hboxVariables);
-        contentBox.add(hboxResult);
         contentBox.add(hboxButtons);
+        contentBox.add(hboxResult);
         contentBox.add(Box.createVerticalGlue());
         getContentPane().add(contentBox, BorderLayout.CENTER);
     }
