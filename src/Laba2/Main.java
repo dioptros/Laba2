@@ -78,7 +78,7 @@ public class Main extends JFrame {
                 radioButtons.getElements().nextElement().getModel(), true);
         hboxFormulaType.add(Box.createHorizontalGlue());
         hboxFormulaType.setBorder(
-                BorderFactory.createLineBorder(Color.LIGHT_GRAY));
+                BorderFactory.createLineBorder(Color.GRAY));
 // Создать область с полями ввода для X и Y
         JLabel labelForX = new JLabel("X:");
         textFieldX = new JTextField("0", 10);
